@@ -62,9 +62,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/osho-ventures.webflow.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" integrity="sha384-pvXSwSU09c+q9mPyY++ygUHWIYRoaxgnJ/JC5wcOzMb/NVVu+IDniiB9qWp3ZNWM" crossorigin="anonymous" type="text/javascript"></script>
   <script
     type="text/javascript">WebFont.load({ google: { families: ["Hanken Grotesk:300,400,500,600,700", "Inter:200,300,400,500,600,700,800", "JetBrains Mono:300,400,500,600,700"] } });</script>
   <script
@@ -113,34 +111,6 @@
       max-width: 1120px !important;
     }
   </style>
-  <!-- Tailwind CSS v3 with Plugins -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              canvas: '#fbf9f4',
-              surface: '#f5f3ec',
-              card: '#f8f6f0',
-              border: '#dcd9d1',
-              dark: '#07160d',
-              darkSurface: '#0e2216',
-              greenAccent: '#68a120',
-              electricLime: '#b7f569',
-              muted: '#626860',
-              techMuted: '#8b9289'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          }
-        }
-      }
-    }
-  </script>
   <style data-purpose="base-styling">
     body {
       background-color: #fbf9f4;
@@ -153,6 +123,8 @@
       font-family: 'JetBrains Mono', monospace;
     }
   </style>
+  <!-- Built from tailwind/about-us.config.js. Rebuild with: npm run build:css -->
+  <link href="css/tailwind-about-us.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="bg-[#fbf9f4] text-[#07160d] antialiased selection:bg-[#b7f569] selection:text-[#07160d] overflow-x-hidden">
@@ -192,7 +164,7 @@
   <main>
     <!-- BEGIN: HeroSection -->
     <div class="px-[5%]">
-      <section class="container mx-auto  pt-8 sm:pt-14 pb-12 sm:pb-20" data-purpose="hero-dossier">
+      <section class="container mx-auto pt-8 sm:pt-14 pb-12 sm:pb-20" data-purpose="hero-dossier">
         <div class="max-w-4xl mx-auto text-center mb-8 sm:mb-14">
           <div class="inline-flex items-center justify-center gap-2 mb-3 sm:mb-4"><span
               class="h-[1px] w-4 sm:w-8 bg-[#dbdad5]"></span><span
@@ -201,30 +173,19 @@
           <h1
             class="text-3xl sm:text-6xl font-heading lg:text-[5.4rem] font-black uppercase tracking-[-0.04em] leading-[0.95] sm:leading-[0.92] text-[#07160d] mb-4 sm:mb-6">
             Architects of<br><span class="text-[#68a120]">Industrial Permanence</span></h1>
-          <p class="text-sm sm:text-lg font-medium text-[#1a231d] leading-relaxed max-w-3xl mx-auto mb-3 sm:mb-4"></p>
-          <p class="text-sm sm:text-lg font-medium text-[#1a231d] leading-relaxed max-w-3xl mx-auto mb-3 sm:mb-4"
-            style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(26, 35, 29);">
+          <p class="text-sm sm:text-lg font-medium text-[#1a231d] leading-relaxed max-w-3xl mx-auto mb-6 sm:mb-8">
             Osho Ventures Group is focused on identifying, developing and transforming resources, infrastructure and
             industrial opportunities.</p>
-          <p></p>
-          <p class="text-xs sm:text-sm text-[#50574d] leading-relaxed max-w-2xl mx-auto mb-6 sm:mb-8"></p>
-          <p class="text-xs sm:text-sm text-[#50574d] leading-relaxed max-w-2xl mx-auto mb-6 sm:mb-8"
-            style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(80, 87, 77);">
+          <p class="text-xs sm:text-sm text-[#50574d] leading-relaxed max-w-2xl mx-auto mb-6 sm:mb-8">
             Since 2004, Osho Ventures has developed and pursued opportunities across resources, materials, logistics,
             infrastructure, energy, agriculture and real assets. We identify overlooked value, evaluate the technical
             and commercial pathways required to unlock it, and connect resources with processing, infrastructure,
             logistics and markets to develop scalable industrial platforms.</p>
-          <div
-            class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto"
-            style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(7, 22, 13); font-size: medium;">
-          </div>
-
           <div>
             <a href="book-a-call.html"
               class="uppercase bg-black px-4 md:px-6 font-mono-tech py-2 max-md:text-sm md:py-3 text-white hover:opacity-80">Book
               a call</a>
           </div>
-
         </div>
         <div class="relative w-full rounded-none border border-[#dbdad5] p-1.5 sm:p-2 bg-[#f8f6f0] shadow-sm group">
           <div class="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#07160d] z-10"></div>
@@ -234,32 +195,25 @@
           <div class="relative overflow-hidden border border-[#dbdad5]"><img
               alt="Advanced clean-tech circular recovery facility with brutalist concrete and glass architecture"
               class="w-full h-[260px] sm:h-[480px] lg:h-[680px] object-cover filter brightness-[0.98] contrast-[1.02]"
-              src="/images/osho-about-us.png">
+              src="images/osho-about-us.png">
             <div
               class="absolute bottom-3 right-3 sm:bottom-8 sm:right-8 bg-[#07160d]/95 backdrop-blur-md border border-[#233829] p-3 sm:p-6 max-w-[280px] sm:max-w-sm text-left shadow-2xl z-20">
               <div
                 class="flex items-center justify-between gap-2 sm:gap-4 border-b border-[#1c3022] pb-2 sm:pb-3 mb-2 sm:mb-3">
-                <span class="text-[8px] sm:text-[9px] font-mono-tech text-[#8b9289] uppercase tracking-wider"><span
-                    style="letter-spacing: 0.05em;" class="">Osho Ventures // Our Thread</span><span
-                    class="inline-flex items-center text-[8px] sm:text-[9px] font-mono-tech text-[#b7f569] font-bold tracking-wider"
-                    style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(183, 245, 105); text-transform: none;"></span></span><span
+                <span class="text-[8px] sm:text-[9px] font-mono-tech text-[#8b9289] uppercase tracking-wider">Osho
+                  Ventures // Our Thread</span>
+                <span
                   class="inline-flex items-center text-[8px] sm:text-[9px] font-mono-tech text-[#b7f569] font-bold tracking-wider"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#b7f569] mr-1 sm:mr-1.5 animate-pulse"></span>
-                  <div class="">SINCE 2004<br></div>
+                  <span>SINCE 2004</span>
                 </span>
               </div>
               <p class="text-[11px] sm:text-xs text-[#d1d8cf] leading-relaxed font-sans mb-2 sm:mb-3">
-              <p class="text-[11px] sm:text-xs text-[#d1d8cf] leading-relaxed font-sans mb-2 sm:mb-3"
-                style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(209, 216, 207);">
                 Find overlooked value. Engineer the system. Connect it to the market. Build for scale.</p>
-              </p>
               <div
                 class="flex items-center justify-between text-[9px] sm:text-[10px] font-mono-tech text-[#8b9289] pt-1.5 sm:pt-2 border-t border-[#1c3022]">
-                <span class="">
-                  <div class="">RESOURCE → PROCESS<br></div>
-                </span><span class="text-[#b7f569]">
-                  <div class="">MARKET → SCALE<br></div>
-                </span>
+                <span>RESOURCE → PROCESS</span>
+                <span class="text-[#b7f569]">MARKET → SCALE</span>
               </div>
             </div>
           </div>
@@ -275,115 +229,65 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 pb-8 sm:pb-16 border-b border-[#dbdad5]">
             <div class="lg:col-span-4">
               <h2
-                class="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#07160d] leading-[1.05]">
-                <div class="lg:col-span-4"
-                  style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: medium; font-weight: 400; letter-spacing: normal; text-transform: none;">
-                  <h2
-                    class="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#07160d] leading-[1.05]"
-                    style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(7, 22, 13);">
-                    Industrial Residues Are Not Always Waste</h2>
-                  <div><br></div>
-                </div>
-                <div class="lg:col-span-8 flex flex-col justify-between space-y-4 sm:space-y-6"
-                  style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: medium; font-weight: 400; letter-spacing: normal; text-transform: none;">
-                </div>
-              </h2>
+                class="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#07160d] leading-[1.05] mb-[1.05rem] sm:mb-10 lg:mb-4">
+                Industrial Residues Are Not Always Waste</h2>
             </div>
-            <div class="lg:col-span-8 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <p class="text-base sm:text-xl font-medium text-[#1a231d] leading-relaxed"></p>
-              <p class="text-base sm:text-xl font-medium text-[#1a231d] leading-relaxed"
-                style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(26, 35, 29);">
+            <div class="lg:col-span-8 flex flex-col justify-between pt-4 sm:pt-6">
+              <p class="text-base sm:text-xl font-medium text-[#1a231d] leading-relaxed">
                 They may be resources whose economic value has not yet been unlocked. A material becomes a liability
-                when
-                it is isolated from a market. The same material can become an asset when the right combination of
+                when it is isolated from a market. The same material can become an asset when the right combination of
                 technology, processing, logistics, infrastructure and market demand is brought together.</p>
-              <p></p>
-              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed">Osho Ventures develops that connection.
-                Across
-                minerals, materials, energy, logistics and infrastructure, we look beyond conventional boundaries to
-                find
-                where resource inefficiency can become productive value. Three ideas shape every opportunity we pursue.
+              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed mt-8 sm:mt-12">Osho Ventures develops that
+                connection. Across minerals, materials, energy, logistics and infrastructure, we look beyond
+                conventional boundaries to find where resource inefficiency can become productive value. Three ideas
+                shape every opportunity we pursue.
               </p>
             </div>
           </div>
           <div class="divide-y divide-[#dbdad5]">
             <article class="py-8 sm:py-14 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
               <div class="lg:col-span-4">
-                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">
-                  <div class="lg:col-span-4"
-                    style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: medium; font-weight: 400; letter-spacing: normal; text-transform: none;">
-                    <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]"
-                      style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(7, 22, 13);">
-                      Look Beyond the Resource</h3>
-                  </div>
-                  <div class="lg:col-span-8 space-y-3 sm:space-y-4"
-                    style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: medium; font-weight: 400; letter-spacing: normal; text-transform: none;">
-                  </div>
-                </h3>
+                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">Look Beyond the
+                  Resource</h3>
               </div>
-              <div class="lg:col-span-8 space-y-3 sm:space-y-4">
-                <p class="text-sm sm:text-base text-[#1a231d] leading-relaxed font-medium"></p>
-                <div class="">The resource is only the beginning.</div>
-                <p></p>
-                <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-                <div class="">A mineral deposit is not simply a geological resource. A residue stream is not simply a
-                  disposal problem. A port is not simply a piece of infrastructure. We start by asking what each element
-                  could become, not what it has conventionally been labelled.</div>
-                <p></p>
+              <div class="lg:col-span-8 space-y-3 sm:space-y-4 py-3 sm:py-4">
+                <p>The resource is only the beginning.</p>
+                <p>A mineral deposit is not simply a geological resource. A residue stream is not simply a disposal
+                  problem. A port is not simply a piece of infrastructure. We start by asking what each element could
+                  become, not what it has conventionally been labelled.</p>
               </div>
             </article>
             <article class="py-8 sm:py-14 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
               <div class="lg:col-span-4">
-                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">
-                  <div class="">See the System</div>
-                </h3>
+                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">See the System</h3>
               </div>
-              <div class="lg:col-span-8 space-y-3 sm:space-y-4">
-                <p class="text-sm sm:text-base text-[#1a231d] leading-relaxed font-medium"></p>
-                <div class="">Value is created by connecting the pieces.</div>
-                <p></p>
-                <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-                <div class="">We do not view resources, processing, logistics and infrastructure as isolated businesses.
+              <div class="lg:col-span-8 space-y-3 sm:space-y-4 py-3 sm:py-4">
+                <p>Value is created by connecting the pieces.</p>
+                <p>We do not view resources, processing, logistics and infrastructure as isolated businesses.
                   Opportunities that appear uneconomic in isolation can sometimes become viable when integrated into a
-                  larger industrial platform. Technology, infrastructure, logistics and capital must work together.
-                </div>
-                <p></p>
+                  larger industrial platform. Technology, infrastructure, logistics and capital must work together.</p>
               </div>
             </article>
             <article class="py-8 sm:py-14 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
               <div class="lg:col-span-4">
-                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">
-                  <div class="">Build for Scale</div>
-                </h3>
+                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">Build for Scale</h3>
               </div>
-              <div class="lg:col-span-8 space-y-3 sm:space-y-4">
-                <p class="text-sm sm:text-base text-[#1a231d] leading-relaxed font-medium"></p>
-                <div class="">A good idea becomes an industrial platform only when it can operate commercially and
-                  repeatedly.</div>
-                <p></p>
-                <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-                <div class="">Circularity and resource efficiency must work economically as well as environmentally. We
-                  seek opportunities where resource, need, technical pathway, economics, infrastructure and market
-                  align.
-                  Where they do not, discipline is part of innovation.</div>
-                <p></p>
+              <div class="lg:col-span-8 space-y-3 sm:space-y-4 py-3 sm:py-4">
+                <p>A good idea becomes an industrial platform only when it can operate commercially and repeatedly.</p>
+                <p>Circularity and resource efficiency must work economically as well as environmentally. We seek
+                  opportunities where resource, need, technical pathway, economics, infrastructure and market align.
+                  Where they do not, discipline is part of innovation.</p>
               </div>
             </article>
             <article class="py-8 sm:py-14 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
               <div class="lg:col-span-4">
-                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">
-                  <div class="">ENGINEER THE CONNECTION</div>
-                </h3>
+                <h3 class="text-xl sm:text-3xl font-black uppercase tracking-tight text-[#07160d]">ENGINEER THE
+                  CONNECTION</h3>
               </div>
-              <div class="lg:col-span-8 space-y-3 sm:space-y-4">
-                <p class="text-sm sm:text-base text-[#1a231d] leading-relaxed font-medium"></p>
-                <div class="">Value emerges when the right elements work together.</div>
-                <p></p>
-                <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-                <div class="">We evaluate how technology, processing, infrastructure, logistics, capital and market
-                  demand can be connected to transform an identified opportunity into a commercially viable industrial
-                  system.</div>
-                <p></p>
+              <div class="lg:col-span-8 space-y-3 sm:space-y-4 py-3 sm:py-4">
+                <p>Value emerges when the right elements work together.</p>
+                <p>We evaluate how technology, processing, infrastructure, logistics, capital and market demand can be
+                  connected to transform an identified opportunity into a commercially viable industrial system.</p>
               </div>
             </article>
           </div>
@@ -391,103 +295,65 @@
       </div>
     </section>
     <!-- END: PhilosophySection -->
-    <!-- BEGIN: CouncilSection -->
-    <!-- END: CouncilSection -->
     <!-- BEGIN: ScaleMetricsSection -->
     <section class="border-y px-[5%] border-[#dbdad5] bg-[#f5f3ec] py-12 sm:py-16" data-purpose="proven-scale-metrics">
       <div class="container mx-auto">
         <div
           class="grid grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#dbdad5] border border-[#dbdad5] bg-[#fbf9f4]">
           <div class="p-4 sm:p-8 border-b sm:border-b-0">
-            <div class="text-2xl sm:text-5xl font-black text-[#07160d] tracking-tight mb-1 sm:mb-2">
-              <div class="">20+</div>
-            </div>
-            <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1"><span
-                style="letter-spacing: 0.6px;" class="">Years</span></div>
-            <p class="text-[11px] sm:text-xs text-[#626860] leading-relaxed"></p>
-            <div class="">An industrial development perspective built since 2004.</div>
-            <p></p>
+            <div class="text-2xl sm:text-5xl font-black text-[#07160d] tracking-tight mb-1 sm:mb-2">20+</div>
+            <div class="text-[10px] sm:text-xs font-bold uppercase tracking-[0.6px] text-[#07160d] mb-1">Years</div>
+            <p>An industrial development perspective built since 2004.</p>
           </div>
           <div class="p-4 sm:p-8 border-b sm:border-b-0 border-l border-[#dbdad5] sm:border-l-0">
             <div class="text-2xl sm:text-5xl font-black text-[#07160d] tracking-tight mb-1 sm:mb-2">8</div>
-            <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1">
-              <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1"
-                style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(7, 22, 13);">
-                Strategic Sectors</div>
+            <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1">Strategic Sectors
             </div>
-            <p class="text-[11px] sm:text-xs text-[#626860] leading-relaxed"></p>
-            <div class="">Resources, materials, energy, logistics, infrastructure and more.</div>
-            <p></p>
+            <p>Resources, materials, energy, logistics, infrastructure and more.</p>
           </div>
           <div class="p-4 sm:p-8">
             <div class="text-2xl sm:text-5xl font-black text-[#07160d] tracking-tight mb-1 sm:mb-2">Global</div>
             <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1">Outlook</div>
-            <p class="text-[11px] sm:text-xs text-[#626860] leading-relaxed"></p>
-            <div class="">Africa, Indian Ocean, Asia, Europe and global markets.</div>
-            <p></p>
+            <p>Africa, Indian Ocean, Asia, Europe and global markets.</p>
           </div>
           <div class="p-4 sm:p-8 border-l border-[#dbdad5] sm:border-l-0">
             <div class="text-2xl sm:text-5xl font-black text-[#07160d] tracking-tight mb-1 sm:mb-2">4</div>
-            <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1">
-              <div class="">Stage Pathway</div>
-            </div>
-            <p class="text-[11px] sm:text-xs text-[#626860] leading-relaxed"></p>
-            <div class="">Discover, engineer, integrate and scale.</div>
-            <p></p>
+            <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#07160d] mb-1">Stage Pathway</div>
+            <p>Discover, engineer, integrate and scale.</p>
           </div>
         </div>
         <div class="mt-10 sm:mt-14 pt-8 sm:pt-12 border-t border-[#dbdad5]">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div class="lg:col-span-7 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <div class="space-y-1 sm:space-y-2">
+              <div class="space-y-1 sm:space-y-2 pb-1 sm:pb-2">
                 <h3
                   class="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#07160d] leading-[1.05]">
-                  <div class="">Sumit Agrawal</div>
-                </h3>
-                <p class="text-xs sm:text-sm font-mono-tech uppercase tracking-wider text-[#68a120] font-semibold"></p>
-                <div class="">Founder &amp; Principal</div>
-                <p></p>
+                  Sumit Agrawal</h3>
+                <p>Founder &amp; Principal</p>
               </div>
-              <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-[#4d534a] leading-relaxed">
-                <p class=""></p>
-                <p class=""
-                  style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ;">
+              <div class="pt-3 sm:pt-4 text-xs sm:text-sm text-[#4d534a] leading-relaxed">
+                <p>
                   Sumit Agrawal founded Osho Ventures in 2004. His approach emerged from exposure to the realities of
                   physical industry — energy, commodities, logistics, capital-intensive infrastructure and the complex
                   relationship between resources and markets.</p>
-                <p></p>
-                <p class=""></p>
-                <p class=""
-                  style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin: 16px 0px 0px; --tw-space-y-reverse: 0;">
+                <p class="mt-4">
                   Rather than viewing industries as isolated sectors, he developed a systems-oriented perspective:
                   resources only create value when they can be technically transformed, commercially positioned and
                   reliably connected to demand. That philosophy led the Group across resource development,
                   beneficiation, logistics, industrial materials, infrastructure and circular-economy opportunities.</p>
-                <p></p>
-                <p class=""></p>
-                <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-[#4d534a] leading-relaxed"
-                  style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(77, 83, 74); --tw-space-y-reverse: 0; margin-top: 24px; margin-bottom: 0px;">
-                  <p class=""
-                    style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin: 16px 0px 0px; --tw-space-y-reverse: 0;">
-                    The objective has never been to enter an industry simply because it is established. It has been to
-                    ask where value is being lost, why it is being lost, what it would take to recover it — and whether
-                    the solution can become a scalable industrial platform.</p>
-                </div>
-
+                <p class="mt-6">
+                  The objective has never been to enter an industry simply because it is established. It has been to
+                  ask where value is being lost, why it is being lost, what it would take to recover it — and whether
+                  the solution can become a scalable industrial platform.</p>
               </div>
-
             </div>
             <div class="lg:col-span-5">
               <div class="relative border border-[#dbdad5] bg-[#fbf9f4] shadow-sm overflow-hidden"><img
-                  style="object-position : top" alt="Sumit Agrawal, Founder and Principal"
-                  class="w-full h-[320px] sm:h-[440px] object-cover filter brightness-[0.98] contrast-[1.02]"
-                  src="/images/sumit-agarwal-founder.jpg">
-                <div class="p-3 sm:p-4 border-t border-[#dbdad5] bg-[#fbf9f4] flex flex-col gap-1">
-                  <p
-                    class="text-[10px] sm:text-[11px] font-mono-tech uppercase tracking-wider text-[#07160d] font-semibold">
-                  </p>
-                  <div class="">SUMIT AGRAWAL // FOUNDER &amp; PRINCIPAL</div>
-                  <p></p>
+                  alt="Sumit Agrawal, Founder and Principal"
+                  class="w-full h-[320px] sm:h-[440px] object-cover object-top filter brightness-[0.98] contrast-[1.02]"
+                  src="images/sumit-agarwal-founder.jpg">
+                <div class="px-3 py-4 sm:px-4 sm:py-5 border-t border-[#dbdad5] bg-[#fbf9f4]">
+                  <p>SUMIT AGRAWAL // FOUNDER &amp; PRINCIPAL</p>
                 </div>
               </div>
             </div>
@@ -499,22 +365,14 @@
     <!-- BEGIN: TimelineSection -->
     <section class="py-12 px-[5%] sm:py-24 bg-[#f8f6f0] border-t border-[#dbdad5]"
       data-purpose="evolutionary-chronology" id="timeline">
-      <div class="container mx-auto ">
+      <div class="container mx-auto">
         <div class="max-w-4xl mb-8 sm:mb-16">
-          <p
-            class="text-[10px] sm:text-[11px] font-mono-tech tracking-[0.2em] uppercase font-semibold text-[#8b9289] mb-2 sm:mb-3">
-          </p>
-          <div class="">Our Evolution</div>
-          <p></p>
+          <p class="mt-2 sm:mt-3">Our Evolution</p>
           <h2
             class="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#07160d] leading-[1.05] mb-4 sm:mb-6">
-            <div class="">A Journey Across the Industrial Value Chain</div>
-          </h2>
-          <p class="text-xs sm:text-base text-[#4d534a] leading-relaxed"></p>
-          <div class="">From resources and international markets to logistics, materials and circular industrial
-            systems, the Group's path has followed one consistent idea: find overlooked value and build the system
-            around it.</div>
-          <p></p>
+            A Journey Across the Industrial Value Chain</h2>
+          <p>From resources and international markets to logistics, materials and circular industrial systems, the
+            Group's path has followed one consistent idea: find overlooked value and build the system around it.</p>
         </div>
         <div class="border-t border-[#dbdad5] divide-y divide-[#dbdad5]">
           <div class="py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
@@ -524,101 +382,66 @@
                 class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">The Foundational
                 Blueprint</span>
             </div>
-            <div class="lg:col-span-6 space-y-2 sm:space-y-3">
-              <p class="text-sm sm:text-base font-semibold text-[#07160d]"></p>
-              <div class="">Established to identify opportunities across resources, energy and international markets.
-              </div>
-              <p></p>
-              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-              <div class="">Osho Ventures was founded with a focus on the physical economy and the relationship between
-                resources, energy and the markets that depend on them.</div>
-              <p></p>
+            <div class="lg:col-span-6 space-y-2 sm:space-y-3 py-2 sm:py-3">
+              <p>Established to identify opportunities across resources, energy and international markets.</p>
+              <p>Osho Ventures was founded with a focus on the physical economy and the relationship between resources,
+                energy and the markets that depend on them.</p>
             </div>
           </div>
           <div class="py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
             <div class="lg:col-span-3">
               <div class="flex items-center gap-3 mb-1 sm:mb-2"><span
-                  class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d]">
-                  <div class="">2005 onward<br></div>
-                </span></div><span
-                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">
-                <div class="">Resource Development<br></div>
-              </span>
+                  class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d]">2005 onward</span></div><span
+                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">Resource
+                Development</span>
             </div>
-            <div class="lg:col-span-6 space-y-2 sm:space-y-3">
-              <p class="text-sm sm:text-base font-semibold text-[#07160d]"></p>
-              <div class="">Expansion into mineral and resource opportunities across international markets.</div>
-              <p></p>
-              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-              <div class="">The Group's interests extended across energy minerals, industrial minerals and other
-                strategic resources — each approached through the full chain of quality, process, infrastructure,
-                logistics and market.</div>
-              <p></p>
+            <div class="lg:col-span-6 space-y-2 sm:space-y-3 py-2 sm:py-3">
+              <p>Expansion into mineral and resource opportunities across international markets.</p>
+              <p>The Group's interests extended across energy minerals, industrial minerals and other strategic
+                resources — each approached through the full chain of quality, process, infrastructure, logistics and
+                market.</p>
             </div>
           </div>
           <div class="py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
             <div class="lg:col-span-3">
               <div class="flex items-center gap-3 mb-1 sm:mb-2"><span
                   class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d]">2007 onward</span></div><span
-                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">
-                <div class="">Logistics &amp; Infrastructure<br></div>
-              </span>
+                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">Logistics &amp;
+                Infrastructure</span>
             </div>
-            <div class="lg:col-span-6 space-y-2 sm:space-y-3">
-              <p class="text-sm sm:text-base font-semibold text-[#07160d]"></p>
-              <div class="">Building capabilities across rail, ports, shipping and integrated supply chains.</div>
-              <p></p>
-              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-              <div class="">A resource without reliable infrastructure is not necessarily a commercial resource. The
-                Group developed experience at the interfaces between mines, processing, rail, ports, shipping, storage
-                and international customers.</div>
-              <p></p>
+            <div class="lg:col-span-6 space-y-2 sm:space-y-3 py-2 sm:py-3">
+              <p>Building capabilities across rail, ports, shipping and integrated supply chains.</p>
+              <p>A resource without reliable infrastructure is not necessarily a commercial resource. The Group developed
+                experience at the interfaces between mines, processing, rail, ports, shipping, storage and international
+                customers.</p>
             </div>
           </div>
           <div class="py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
             <div class="lg:col-span-3">
               <div class="flex items-center gap-3 mb-1 sm:mb-2"><span
                   class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d]">2012 onward</span></div><span
-                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">
-                <div class="">Recovery &amp; Industrial Materials<br></div>
-              </span>
+                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">Recovery &amp;
+                Industrial Materials</span>
             </div>
-            <div class="lg:col-span-6 space-y-2 sm:space-y-3">
-              <p class="text-sm sm:text-base font-semibold text-[#07160d]"></p>
-              <div class="">Moving beyond primary extraction toward residues, secondary resources and industrial
-                materials.</div>
-              <p></p>
-              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-              <div class="">The focus moved to industrial residues and underutilised assets, and to connecting them with
-                productive applications — including cementitious materials and mineral inputs for more efficient
-                industrial production.</div>
-              <p></p>
+            <div class="lg:col-span-6 space-y-2 sm:space-y-3 py-2 sm:py-3">
+              <p>Moving beyond primary extraction toward residues, secondary resources and industrial materials.</p>
+              <p>The focus moved to industrial residues and underutilised assets, and to connecting them with productive
+                applications — including cementitious materials and mineral inputs for more efficient industrial
+                production.</p>
             </div>
           </div>
           <div class="py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-start">
             <div class="lg:col-span-3">
               <div class="flex items-center gap-3 mb-1 sm:mb-2"><span
-                  class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d]">
-                  <div class="flex items-center gap-3 mb-1 sm:mb-2"
-                    style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-family: Inter, sans-serif; font-size: medium; font-weight: 400;">
-                    <span class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d]"
-                      style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(7, 22, 13);">Today<br></span>
-                  </div>
-                </span></div><span
-                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">
-                <div class="">The Next Phase<br></div>
-              </span>
+                  class="text-3xl sm:text-5xl font-black font-mono-tech text-[#07160d] pb-1 sm:pb-2">Today</span></div><span
+                class="text-xs font-mono-tech text-[#68a120] uppercase font-bold tracking-wider block">The Next
+                Phase</span>
             </div>
-            <div class="lg:col-span-6 space-y-2 sm:space-y-3">
-              <p class="text-sm sm:text-base font-semibold text-[#07160d]"></p>
-              <div class="">A broader platform for resource efficiency, circular materials and long-term partnerships.
-              </div>
-              <p></p>
-              <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed"></p>
-              <div class="">Osho Ventures is developing a platform that spans circular industrial systems,
-                infrastructure, energy efficiency, sustainable development and biological resources — united by a single
-                systems philosophy.</div>
-              <p></p>
+            <div class="lg:col-span-6 space-y-2 sm:space-y-3 py-2 sm:py-3">
+              <p>A broader platform for resource efficiency, circular materials and long-term partnerships.</p>
+              <p>Osho Ventures is developing a platform that spans circular industrial systems, infrastructure, energy
+                efficiency, sustainable development and biological resources — united by a single systems philosophy.
+              </p>
             </div>
           </div>
         </div>
@@ -628,77 +451,50 @@
     <!-- BEGIN: GovernanceSection -->
     <section class="border-t px-[5%] border-[#dbdad5] bg-[#fbf9f4] py-12 sm:py-24"
       data-purpose="governance-and-standards" id="governance">
-      <div class="container mx-auto ">
+      <div class="container mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 pb-8 sm:pb-16 border-b border-[#dbdad5]">
           <div class="lg:col-span-4">
-            <p
-              class="text-[10px] sm:text-[11px] font-mono-tech tracking-[0.2em] uppercase font-semibold text-[#8b9289] mb-2 sm:mb-3">
-            <div class="">Governance &amp; Responsible Development</div>
-            </p>
+            <p class="mt-2 sm:mt-3">Governance &amp; Responsible Development</p>
             <h2
               class="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#07160d] leading-[1.05] mt-2">
-              <div class="">Ambition Requires Discipline</div>
-            </h2>
+              Ambition Requires Discipline</h2>
           </div>
-          <div class="lg:col-span-8 space-y-4 sm:space-y-6">
-            <p class="text-base sm:text-xl font-medium text-[#1a231d] leading-relaxed">
-            <div class="">Industrial opportunities operate within complex technical, environmental, regulatory and
-              commercial frameworks. We do not substitute claims for evidence.</div>
-            </p>
-            <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed">
-            <div class="">Environmental and social considerations are not separate from industrial development — they
-              form part of the investment and engineering question from the beginning. Where external certification or
-              recognised standards apply, they are pursued through the appropriate independent processes.</div>
-            </p>
+          <div class="lg:col-span-8 space-y-4 sm:space-y-6 py-4 sm:py-6">
+            <p>Industrial opportunities operate within complex technical, environmental, regulatory and commercial
+              frameworks. We do not substitute claims for evidence.</p>
+            <p>Environmental and social considerations are not separate from industrial development — they form part of
+              the investment and engineering question from the beginning. Where external certification or recognised
+              standards apply, they are pursued through the appropriate independent processes.</p>
           </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 pt-8 sm:pt-14">
-          <div class="lg:col-span-6 space-y-6 sm:space-y-8">
-            <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-[#07160d]">
-              <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-[#07160d]"
-                style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(7, 22, 13);">
-                Responsibility Is Part of the System</h3>
-            </h3>
-            <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed">
-            <div class="">Every opportunity is evaluated against applicable laws and regulations, environmental
-              requirements, technical standards, product specifications, health and safety, supply-chain integrity,
-              financial viability and counterparty risk.</div>
-            </p>
-            <p class="text-xs sm:text-sm text-[#4d534a] leading-relaxed">
-            <div class="">The objective is not to claim that every project is impact-free. It is to develop projects in
-              which economic value and responsible resource use reinforce one another.</div>
-            </p>
+          <div class="lg:col-span-6 space-y-6 sm:space-y-8 py-6 sm:py-8">
+            <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-[#07160d]">Responsibility Is Part of
+              the System</h3>
+            <p>Every opportunity is evaluated against applicable laws and regulations, environmental requirements,
+              technical standards, product specifications, health and safety, supply-chain integrity, financial
+              viability and counterparty risk.</p>
+            <p>The objective is not to claim that every project is impact-free. It is to develop projects in which
+              economic value and responsible resource use reinforce one another.</p>
           </div>
           <div class="lg:col-span-6 space-y-4 sm:space-y-6">
-            <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-[#07160d]">
-              <div class="">What We Evaluate</div>
-            </h3>
+            <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight text-[#07160d]">What We Evaluate</h3>
             <div class="divide-y divide-[#dbdad5]">
-              <div class="py-3 sm:py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1"><span
-                  class="text-xs sm:text-sm font-bold text-[#07160d]">
-                  <div class="">Regulatory &amp; Technical Compliance<br></div>
-                </span><span class="text-[10px] sm:text-xs font-mono-tech text-[#68a120]">
-                  <div class="">CONSIDERED FROM DAY ONE<br></div>
-                </span></div>
+              <div class="py-3 sm:py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <span class="text-xs sm:text-sm font-bold text-[#07160d]">Regulatory &amp; Technical Compliance</span>
+                <span class="text-[10px] sm:text-xs font-mono-tech text-[#68a120]">CONSIDERED FROM DAY ONE</span>
+              </div>
               <div class="py-3 sm:py-4">
                 <h4 class="text-xs sm:text-sm font-bold text-[#07160d] mb-1">Environment</h4>
-                <p class="text-[11px] sm:text-xs text-[#4d534a] leading-relaxed">
-                <div class="">Resource intensity, emissions, water, land, rehabilitation and circularity.</div>
-                </p>
+                <p>Resource intensity, emissions, water, land, rehabilitation and circularity.</p>
               </div>
               <div class="py-3 sm:py-4">
                 <h4 class="text-xs sm:text-sm font-bold text-[#07160d] mb-1">People</h4>
-                <p class="text-[11px] sm:text-xs text-[#4d534a] leading-relaxed">
-                <div class="">Communities, employment, skills, safety and local economic participation.</div>
-                </p>
+                <p>Communities, employment, skills, safety and local economic participation.</p>
               </div>
               <div class="py-3 sm:py-4">
-                <h4 class="text-xs sm:text-sm font-bold text-[#07160d] mb-1">
-                  <div class="">Governance &amp; Economics</div>
-                </h4>
-                <p class="text-[11px] sm:text-xs text-[#4d534a] leading-relaxed">
-                <div class="">Transparency, accountability, responsible counterparties, capital discipline and long-term
-                  viability.</div>
+                <h4 class="text-xs sm:text-sm font-bold text-[#07160d] mb-1">Governance &amp; Economics</h4>
+                <p>Transparency, accountability, responsible counterparties, capital discipline and long-term viability.
                 </p>
               </div>
             </div>
@@ -711,25 +507,17 @@
     <section class="bg-[#07160d] text-[#fbf9f4] py-24 sm:py-32 border-t border-[#07160d]"
       data-purpose="system-audit-cta" id="contact">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 text-center"><span
-          class="text-[10px] sm:text-[11px] font-mono-tech tracking-[0.2em] sm:tracking-[0.25em] uppercase font-bold text-[#b7f569] mb-3 sm:mb-4 inline-block">
-          <div class="">Start a Conversation<br></div>
-        </span>
+          class="text-[10px] sm:text-[11px] font-mono-tech tracking-[0.2em] sm:tracking-[0.25em] uppercase font-bold text-[#b7f569] mb-3 sm:mb-4 inline-block">Start
+          a Conversation</span>
         <h2
-          class="text-3xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tight text-[#fbf9f4] max-w-4xl mx-auto leading-[0.98] sm:leading-[0.95] mb-4 sm:mb-6">
-          <h2
-            class="text-3xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tight text-[#fbf9f4] max-w-4xl mx-auto leading-[0.98] sm:leading-[0.95] mb-4 sm:mb-6"
-            style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(251, 249, 244);">
-            Let's Build What Industry Needs Next</h2>
-        </h2>
-        <p class="text-xs sm:text-base text-[#a3b19f] max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed font-sans">
-        <p class="text-xs sm:text-base text-[#a3b19f] max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed font-sans"
-          style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: medium; --tw-text-opacity: 1; color: rgb(163, 177, 159);">
+          class="text-3xl sm:text-5xl lg:text-7xl font-black uppercase tracking-tight text-[#fbf9f4] max-w-4xl mx-auto leading-[0.98] sm:leading-[0.95] mt-4 sm:mt-6 mb-8 sm:mb-10">
+          Let's Build What Industry Needs Next</h2>
+        <p class="text-base text-[#a3b19f] max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed sm:leading-normal font-sans">
           Have a resource, industrial challenge, infrastructure opportunity, technology or investment proposition that
           could benefit from a systems approach? We welcome conversations where these pieces can be brought together
           into something larger.</p>
-        </p>
         <div class="w-full max-w-xs sm:max-w-none mx-auto"><a
-            class="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-9 py-3.5 sm:py-4 bg-[#b7f569] text-[#07160d] font-mono-tech  md:text-lg uppercase font-extrabold tracking-wider hover:bg-[#a5e952] transition-colors shadow-lg shadow-[#b7f569]/10"
+            class="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-9 py-3.5 sm:py-4 bg-[#b7f569] text-[#07160d] font-mono-tech md:text-lg uppercase font-extrabold tracking-wider hover:bg-[#a5e952] transition-colors shadow-lg shadow-[#b7f569]/10"
             href="book-a-call.html">Discuss an opportunity</a></div>
       </div>
     </section>
@@ -769,7 +557,7 @@
                   <div class="footer-link_title-text">connect</div>
                 </div>
                 <a href="mailto:info@oshoventures.com" class="footer-link is-social">Email</a>
-                <a href="https://www.linkedin.com/in/sumiit-agrawwal-1b517218/" target="_blank"
+                <a href="https://www.linkedin.com/in/sumiit-agrawwal-1b517218/" target="_blank" rel="noopener noreferrer"
                   class="footer-link is-social">linkedin</a>
                 <a href="book-a-call.html" class="footer-link is-social">Book a Call</a>
                 <div class="footer-socials_line"></div>
@@ -817,7 +605,6 @@
     type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <script src="https://mck3vq.csb.app/osho-ventures.js"></script>
 
   <!-- BEGIN: MainFooter -->
 

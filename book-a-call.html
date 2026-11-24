@@ -88,9 +88,9 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/webflow.css" rel="stylesheet" type="text/css">
     <link href="css/osho-ventures.webflow.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com" rel="preconnect"> -->
-    <!-- <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" integrity="sha384-pvXSwSU09c+q9mPyY++ygUHWIYRoaxgnJ/JC5wcOzMb/NVVu+IDniiB9qWp3ZNWM" crossorigin="anonymous" type="text/javascript"></script>
     <script
         type="text/javascript">WebFont.load({ google: { families: ["Hanken Grotesk:300,400,500,600,700", "Inter:200,300,400,500,600,700,800", "JetBrains Mono:300,400,500,600,700"] } });</script>
     <script
@@ -139,132 +139,8 @@
             max-width: 1120px !important;
         }
     </style>
-
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        "tertiary-fixed-dim": "#9dd850",
-                        "tertiary-fixed": "#b7f569",
-                        "inverse-primary": "#b8cbbc",
-                        tertiary: "#0a1600",
-                        background: "#fbf9f4",
-                        "tertiary-container": "#192d00",
-                        "on-tertiary-fixed": "#102000",
-                        "primary-fixed": "#d4e7d8",
-                        "on-tertiary-container": "#679e18",
-                        secondary: "#605e57",
-                        error: "#ba1a1a",
-                        primary: "#07160d",
-                        "surface-container-low": "#f5f3ee",
-                        "on-primary": "#ffffff",
-                        "inverse-on-surface": "#f2f1ec",
-                        "surface-dim": "#dbdad5",
-                        "outline-variant": "#c3c8c2",
-                        "on-tertiary": "#ffffff",
-                        "on-background": "#1b1c19",
-                        outline: "#737873",
-                        "on-secondary-fixed-variant": "#484740",
-                        "on-secondary-fixed": "#1c1c16",
-                        "surface-container-highest": "#e4e2dd",
-                        "on-surface": "#1b1c19",
-                        "on-error-container": "#93000a",
-                        "secondary-container": "#e3dfd6",
-                        "inverse-surface": "#30312e",
-                        "surface-tint": "#516256",
-                        "on-primary-fixed": "#0f1f15",
-                        "on-primary-container": "#819386",
-                        "on-secondary-container": "#64635b",
-                        surface: "#fbf9f4",
-                        "primary-container": "#1b2b21",
-                        "surface-bright": "#fbf9f4",
-                        "surface-variant": "#e4e2dd",
-                        "secondary-fixed": "#e6e2d9",
-                        "on-error": "#ffffff",
-                        "surface-container-high": "#eae8e3",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-fixed-dim": "#b8cbbc",
-                        "error-container": "#ffdad6",
-                        "secondary-fixed-dim": "#c9c6bd",
-                        "on-surface-variant": "#434844",
-                        "on-primary-fixed-variant": "#3a4b3f",
-                        "on-secondary": "#ffffff",
-                        "surface-container": "#f0eee9",
-                        "on-tertiary-fixed-variant": "#304f00",
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.25rem",
-                        lg: "0.5rem",
-                        xl: "0.75rem",
-                        full: "9999px",
-                    },
-                    spacing: {
-                        gutter: "32px",
-                        unit: "8px",
-                        "margin-mobile": "24px",
-                        "technical-line-weight": "1px",
-                        "margin-desktop": "80px",
-                        "container-max": "1600px",
-                    },
-                    fontFamily: {
-                        "label-technical": ["JetBrains Mono"],
-                        "label-sm": ["Inter"],
-                        "headline-md": ["Hanken Grotesk"],
-                        "headline-lg-mobile": ["Hanken Grotesk"],
-                        "body-lg": ["Inter"],
-                        "headline-lg": ["Hanken Grotesk"],
-                        "display-xl": ["Hanken Grotesk"],
-                        "body-md": ["Inter"],
-                    },
-                    fontSize: {
-                        "label-technical": [
-                            "12px",
-                            {
-                                lineHeight: "16px",
-                                letterSpacing: "0.1em",
-                                fontWeight: "500",
-                            },
-                        ],
-                        "label-sm": ["11px", { lineHeight: "14px", fontWeight: "600" }],
-                        "headline-md": [
-                            "32px",
-                            { lineHeight: "40px", fontWeight: "500" },
-                        ],
-                        "headline-lg-mobile": [
-                            "40px",
-                            {
-                                lineHeight: "48px",
-                                letterSpacing: "-0.02em",
-                                fontWeight: "600",
-                            },
-                        ],
-                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
-                        "headline-lg": [
-                            "64px",
-                            {
-                                lineHeight: "72px",
-                                letterSpacing: "-0.02em",
-                                fontWeight: "600",
-                            },
-                        ],
-                        "display-xl": [
-                            "120px",
-                            {
-                                lineHeight: "110px",
-                                letterSpacing: "-0.04em",
-                                fontWeight: "700",
-                            },
-                        ],
-                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
-                    },
-                },
-            },
-        };
-    </script>
-
+    <!-- Built from tailwind/book-a-call.config.js. Rebuild with: npm run build:css -->
+    <link href="css/tailwind-book-a-call.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="bg-background font-body-md text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
@@ -346,15 +222,9 @@
                                             </svg>
 
                                         </div>
-                                        <span>
-                                            info@oshoventures.com
+                                        <span>info@oshoventures.com</span>
                                     </a>
-                                    </span>
                                 </div>
-                                <!-- <span
-                  class="font-body-md text-[12px] bg-surface-container-highest px-3 py-1 border border-outline-variant text-on-tertiary-container font-semibold">Encrypted
-                  Gateway
-               </span> -->
                             </div>
 
                             <div class="flex items-center gap-3">
@@ -380,29 +250,6 @@
                                     Sumit Agrawal
                                 </a>
                             </div>
-                            <!-- Line 1: North America -->
-                            <!-- <div
-                  class="flex flex-col gap-2 border-b border-outline-variant pb-6"
-                >
-                  <div class="flex justify-between items-baseline">
-                    <span class="font-body-md text-[13px] text-outline"
-                      >North America HQ // San Francisco</span
-                    >
-                    <span
-                      class="font-body-md text-[13px] text-on-surface-variant"
-                      >06:00 - 18:00 PST</span
-                    >
-                  </div>
-                  <a
-                    class="font-body-lg text-2xl font-semibold text-primary hover:text-on-tertiary-container transition-colors"
-                    href="tel:+14158906746"
-                    >+1 (415) 890-6746</a
-                  >
-                  <span class="font-body-md text-on-surface-variant"
-                    >Direct desk for North American industrial facilities &amp;
-                    partnerships.</span
-                  >
-                </div> -->
 
                         </div>
                         <!-- Card Footer -->
@@ -455,7 +302,7 @@
                                     <div class="footer-link_title-text">connect</div>
                                 </div>
                                 <a href="mailto:info@oshoventures.com" class="footer-link is-social">Email</a>
-                                <a href="https://www.linkedin.com/in/sumiit-agrawwal-1b517218/" target="_blank"
+                                <a href="https://www.linkedin.com/in/sumiit-agrawwal-1b517218/" target="_blank" rel="noopener noreferrer"
                                     class="footer-link is-social">linkedin</a>
                                 <a href="book-a-call.html" class="footer-link is-social">Book a Call</a>
                                 <div class="footer-socials_line"></div>
@@ -493,6 +340,7 @@
                         })
                     </script>
                 </div>
+            </div>
         </section>
     </footer>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6a96f58b278bcc9a872550b2"
@@ -504,93 +352,6 @@
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 
-    <script>
-        function switchTab(pillar) {
-            const data = {
-                waste: {
-                    title:
-                        "Conversion of industrial byproducts into high-purity feedstocks.",
-                    body: `<p>We architect the physical and digital infrastructure required to extract value from waste streams. This is not recycling in the traditional consumer sense; it is molecular reconstruction for high-grade industrial reuse.</p>
-                             <p>Our approach utilizes proprietary separation technologies that function at the micron level, ensuring that recovered materials meet or exceed the technical specifications of virgin counterparts.</p>
-                             <p>The system is governed by a 'Digital Twin' monitoring layer that predicts purity degradation and adjusts process parameters in real-time for complex metallic and chemical processes.</p>`,
-                    list: [
-                        "Molecular Separation Units",
-                        "Closed-Loop Logistics",
-                        "Real-time Purity Verification",
-                        "Thermal Energy Recovery",
-                    ],
-                    label: "VAL01",
-                },
-                circular: {
-                    title:
-                        "Self-sustaining production loops that eliminate external risk.",
-                    body: `<p>Create immunity to global supply chain volatility by generating critical inputs onsite. Our systems close the gap between consumption and production through regenerative design principles.</p>
-                             <p>We implement local energy symbiosis hubs that capture low-grade heat and convert it into electrical or kinetic energy for secondary processes, reducing grid dependency by up to 40%.</p>
-                             <p>By treating the facility as a closed biological organism, we ensure that every byproduct becomes a catalyst for a subsequent production phase, effectively zeroing out the net external footprint.</p>`,
-                    list: [
-                        "Energy Symbiosis Hubs",
-                        "Water Reclamation Arrays",
-                        "Resource Stockpile Mgmt",
-                        "Onsite Refining Units",
-                    ],
-                    label: "CIR02",
-                },
-                optimization: {
-                    title:
-                        "Predictive intelligence that extracts 100% of theoretical yield.",
-                    body: `<p>Leverage machine learning to anticipate thermodynamic losses before they occur. Our optimization suite continuously retunes your facility for peak efficiency across all resource vectors.</p>
-                             <p>Our algorithms analyze thousands of data points per second, from vibration sensors to chemical purity monitors, creating an autonomous adjustment loop that prevents efficiency decay.</p>
-                             <p>The system provides predictive maintenance scheduling that eliminates unplanned downtime, ensuring that the circular loops remain operational 24/7 with zero interruption.</p>`,
-                    list: [
-                        "Predictive Maintenance AI",
-                        "Yield Forecasting Engine",
-                        "Autonomous Load Balancing",
-                        "Dynamic Process Tuning",
-                    ],
-                    label: "OPT03",
-                },
-            };
-
-            const content = data[pillar];
-
-            // Update active tab styles
-            document.querySelectorAll(".solution-tab").forEach((tab) => {
-                tab.classList.remove("border-primary", "text-primary");
-                tab.classList.add("border-transparent", "text-outline");
-            });
-            const activeTab = document.getElementById(`tab-${pillar}`);
-            activeTab.classList.remove("border-transparent", "text-outline");
-            activeTab.classList.add("border-primary", "text-primary");
-
-            // Fade out and update content
-            const container = document.getElementById("solution-content");
-            container.style.opacity = "0";
-
-            setTimeout(() => {
-                document.getElementById("content-title").innerText = content.title;
-                document.getElementById("content-body").innerHTML = content.body;
-                document.getElementById("bg-label").innerText = content.label;
-
-                const list = document.getElementById("content-list");
-                list.innerHTML = "";
-                content.list.forEach((item) => {
-                    const li = document.createElement("li");
-                    li.className =
-                        "flex items-center gap-3 font-label-sm text-label-sm";
-                    li.innerHTML = `<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">check_circle</span> ${item}`;
-                    list.appendChild(li);
-                });
-
-                container.style.opacity = "1";
-            }, 300);
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const container = document.getElementById("solution-content");
-            container.style.transition = "opacity 0.3s ease-in-out";
-        });
-    </script>
-    <script src="https://mck3vq.csb.app/osho-ventures.js"></script>
 
 </body>
 
